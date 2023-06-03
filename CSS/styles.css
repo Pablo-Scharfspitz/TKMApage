@@ -40,7 +40,7 @@ ul:hover li a:not(:hover){
   }
 .bodyc {
   background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 27%, rgba(252,163,17,1) 85%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 21%, rgba(252,163,17,1) 67%, rgba(0,0,0,1) 100%);
   font-family: "Oswald";
   src: url(../FONTS/Oswald-ExtraLight.ttf);
   color: #f2f2f2;
@@ -56,7 +56,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 27%, rgba(252,163,17,1) 85%, rg
   float:left;
   width: 2rem;
   background-color: #272626;
-  color: white;
+  color: #f2f2f2;
 }
 .li1a{
   width:100px;
@@ -81,10 +81,6 @@ margin-left:-20px
 @font-face {
 font-family: "Oswald";
 src: url(../FONTS/Oswald-ExtraLight.ttf);
-}
-.foot{
-height: 100px;
-text-align: center;
 }
 * {
 box-sizing: border-box;
@@ -126,14 +122,12 @@ transform: translateX(-0.02em);
   height: 254px;
   background:#141010;
   transition: all 0.4s;
-  border-radius: 10px;
   box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
   font-size: 30px;
   font-weight: 900;
 }
 
 .card:hover {
-  border-radius: 15px;
   cursor: pointer;
   transform: scale(1.2);
   box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
@@ -148,7 +142,6 @@ transform: translateX(-0.02em);
   justify-content: center;
   align-items: center;
   opacity: 1;
-  border-radius: 15px;
 }
 
 .card:hover .first-content {
@@ -184,28 +177,32 @@ transform: translateX(-0.02em);
     "content1 content2 content2";
 }
 
-.content1 { grid-area: content1; 
-
+.content1 { grid-area: content1;
+border-right-style: solid;
+border-color: rgb(21, 21, 22);
+border-radius: 10%;
+border-width: 200px;
 }
 
 .content2 { grid-area: content2;
+  display: flex;
+  align-items: center;
 text-align: center;
 font-size: xx-large;
 font-weight:bold;
-color: #141010;
+color: black;
+background-image: url(../IMAGES/mainhead.jpg);
+border-bottom-style: solid;
+border-radius: 10%;
+border-width: 130px;
 }
 h1{
   color: #fca311;
 }
-h2{
-  color: #141010;
-  font-weight:bolder;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-p{
+.headertext{
+  font-size: xx-large;
   color: #e5e5e5;
-  font-weight: lighter;
+  font-weight: bolder;
   text-align: center;
   text-shadow: #FC0 1px 0 10px;
 }
@@ -220,7 +217,22 @@ p{
 
 .prof1y2 { grid-area: 1 / 1 / 3 / 2;}
 
-.textopr { grid-area: 1 / 2 / 3 / 3;}
+.textopr { grid-area: 1 / 2 / 3 / 3;
+  font-size: xx-large;
+  text-decoration: solid;
+  text-align:center;
+  padding: 40% 0;
+  border-style: double;
+  border-radius: 50rem;
+  background-image: url(../IMAGES/Gym\ beast\ icon.webp);
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-size: cover;
+}
+h4{
+  background-color: #fca311;
+  font-family: Oswald;
+}
 
 .prof3y4 { grid-area: 1 / 3 / 3 / 4; }
 
@@ -240,7 +252,8 @@ margin-bottom: 30px; }
   padding: 50px 30px 50px 20px;
   border-radius: 24px;
   margin-left: 50px;
-  background: rgb(14, 13, 13, .6)
+  background: rgb(14, 13, 13, .6);
+  overflow-y:auto;
 }
 .card img{
   max-width: 280px;
