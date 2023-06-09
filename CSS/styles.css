@@ -23,7 +23,8 @@ html {
 ul {
   font-family: "Oswald", sans-serif;
   display: flex;
-  gap: 40px;
+  gap: 50px;
+  padding-left: 0;
 }
 ul li {
   list-style: none;
@@ -68,36 +69,14 @@ nav {
 .section1 {
   background-color: #272626;
   width: 100%;
-  padding: 40px 0px;
+  padding: 35px;
+  height: 10rem;
+  display: flex;
+  align-content: center;
 }
 
-.li1 {
-  float: left;
-  width: 2rem;
-  background-color: #272626;
-  color: #f2f2f2;
-}
-
-.li1a {
-  width: 100px;
-  display: block;
-  height: 10px;
-  padding: 0%;
-  height: 20px;
-  background: #272626;
-  color: white;
-  text-decoration: none;
-  padding-left: 20px;
-}
-
-.li1a::before {
-  content: "";
-  background-size: cover;
-  position: sticky;
-  width: 15px;
-  height: 15px;
-  padding: 0%;
-  margin-left: -20px;
+.ahome{
+  padding-right: 70%;
 }
 
 @font-face {
@@ -352,6 +331,7 @@ h4 {
 }
 
 /* Campo de tiro pasar a sass */
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -361,8 +341,9 @@ h4 {
   grid-template-areas: "shotcontent shotcontent extrainfo" "shotcontent shotcontent extrainfo" "securityinfo securityinfo extrainfo";
 }
 
-.extrainfo h1{
+.extrainfo{
   grid-area: extrainfo;
+  border-left-style: solid;
 }
 
 .shotcontent {
@@ -379,21 +360,30 @@ h1 {
   border-bottom-color: #cacdd2;
   font-weight: bolder;
 }
+.fw-bolder{
+  font-size: xx-large;
+  text-align: center;
+}
+.fw-bold{
+  font-size: xx-large;
+}
+.imgshooter{
+  max-width: 100%;
+  height: auto;
+}
 @media only screen and (max-width: 500px) {
-  .imgshooter{ width: 300px;
+  .imgshooter{max-width: 100%;
   height: 170px;}
-
+.d-flex align-items-stretch{
+  width: 100px;
 }
+}
+
 /* revisar */
-.iconsecurity {
-  display: flex;
-  align-items: center;
+span{
+margin-right: 5%;
+padding: 5px;
 }
-
-span {
-  padding: 5px;
-}
-
 
 
 /*# sourceMappingURL=Styles.css.map */
