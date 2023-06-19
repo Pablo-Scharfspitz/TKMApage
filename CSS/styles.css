@@ -175,7 +175,6 @@ main {
   font-weight: 700;
   font-size: 32px;
 }
-
 .content .para {
   line-height: 1.5;
 }
@@ -223,14 +222,12 @@ h1 {
   border-style: solid;
   border-color: #1a1919;
 }
-
 .footer-content h3 {
   font-size: 2.1rem;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
 }
-
 .footer-content p {
   max-width: 600px;
   margin: 10px auto;
@@ -246,11 +243,9 @@ h1 {
   justify-content: center;
   margin: 1rem 0 3rem 0;
 }
-
 .socials li {
   margin: 0 10px;
 }
-
 .socials a {
   text-decoration: none;
   color: #fff;
@@ -268,14 +263,12 @@ h1 {
   padding-bottom: 40px;
   text-align: center;
 }
-
 .footer-bottom p {
   float: left;
   font-size: 14px;
   word-spacing: 2px;
 }
-
-.footer-bottom p a {
+.footer-bottom a {
   color: #f2f2f2;
   font-size: 16px;
   text-decoration: none;
@@ -345,7 +338,6 @@ h4 {
   background: rgba(14, 13, 13, 0.6);
   overflow-y: auto;
 }
-
 .card img {
   max-width: 280px;
   width: 28vw;
