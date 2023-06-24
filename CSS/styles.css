@@ -61,8 +61,8 @@ nav {
 }
 
 .bodyc {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgb(0, 0, 0) 21%, rgb(252, 163, 17) 67%, rgb(0, 0, 0) 100%);
+  background: rgb(255, 183, 66);
+  background: linear-gradient(0deg, rgb(255, 183, 66) 3%, rgb(14, 13, 13) 83%);
   font-family: "Oswald";
   src: url(../FONTS/Oswald-ExtraLight.ttf);
   color: #f2f2f2;
@@ -349,7 +349,7 @@ h4 {
   box-shadow: 0 60px 40px rgb(0, 0, 20);
 }
 
-/* Campo de tiro pasar a sass */
+/* Campo de tiro */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -378,6 +378,7 @@ h4 {
 
 h1 {
   text-align: center;
+  color: #cacdd2;
   border-bottom-style: solid;
   border-bottom-color: #cacdd2;
   font-weight: bolder;
@@ -423,6 +424,80 @@ span {
   .main {
     margin: none;
   }
+}
+/* CLASES */
+#week-schedule {
+  margin: auto;
+  width: 1700px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr repeat(5, auto);
+  gap: 3px;
+  font-family: Oswald;
+}
+
+.schedule-day {
+  text-align: center;
+  background-color: #cacdd2;
+  border-radius: 7px;
+  border-color: #141010;
+}
+.schedule-day h1 {
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.all-shifts {
+  padding-top: 7px;
+  text-align: center;
+}
+
+.employee-shift {
+  border-radius: 7px;
+  margin-top: 5px;
+}
+.employee-shift h2 {
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.employee-shift p {
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+}
+
+.blue {
+  background-color: #4f9995;
+  color: #e5e5e5;
+}
+
+.red {
+  background-color: #7a2f4c;
+  color: #e5e5e5;
+}
+
+.green {
+  background-color: #8ba36e;
+}
+
+.orange {
+  background-color: #af7354;
+}
+
+.purple {
+  background-color: #351E29;
+  color: #e5e5e5;
+}
+
+.empty {
+  border-style: dotted;
+  border-width: 3px;
+  background-color: #e5e5e5;
+  color: #c50000;
 }
 
 /*# sourceMappingURL=Styles.css.map */
