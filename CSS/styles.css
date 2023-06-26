@@ -31,7 +31,7 @@ html {
   display: inline;
 }
 .navul li a {
-  font-size: 16px;
+  font-size: 70%;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
@@ -151,15 +151,20 @@ main {
   flex-flow: row;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
   .cardds {
     margin: 1%;
     padding: 35px;
     font-weight: lighter;
     font-size: small;
+    width: fit-content;
   }
   .container-fluid {
     align-content: center;
+    display: block;
+  }
+  .para {
+    font-size: 90%;
   }
 }
 .content {
@@ -400,7 +405,7 @@ h1 {
   height: auto;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 800px) {
+@media only screen and (min-width: 360px) and (max-width: 800px) {
   .imgshooter {
     max-width: 100%;
     height: 170px;
@@ -409,9 +414,23 @@ h1 {
     display: flex;
     flex-flow: column;
   }
+  .fw-bold {
+    border: none;
+  }
   .fs-3 {
     font-weight: bold;
     text-align: left;
+  }
+  .shotcontent {
+    height: 600px;
+  }
+  .container {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "shotcontent shotcontent extrainfo" "shotcontent shotcontent extrainfo" "securityinfo securityinfo extrainfo";
   }
 }
 /* revisar */
