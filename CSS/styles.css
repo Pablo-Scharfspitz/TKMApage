@@ -793,14 +793,13 @@ input:focus,
   z-index: -1;
 }
 
-.containerinstructores {
+.container.--instructores {
   align-items: center;
   display: flex;
   height: 50rem;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  overflow-y: scroll;
 }
 
 .cta {
@@ -849,13 +848,28 @@ input:focus,
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
-  .containerinstructores {
+  .container.--instructores {
     height: auto;
     padding: 20px;
   }
   .cta {
     width: 100%;
     margin: 10px 0;
+  }
+  .text h2 {
+    font-size: large;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1600px) {
+  .container.--instructores {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+  .maininstructors {
+    height: fit-content;
+    width: auto;
   }
 }
 
