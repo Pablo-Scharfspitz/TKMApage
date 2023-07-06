@@ -20,44 +20,58 @@ html {
   border-radius: 10px;
 }
 
-.navul {
+nav {
+  color: white;
+  padding-top: 24px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 0.7;
+  background-color: #252525;
+  height: 8rem;
+  margin: 7px;
+}
+
+.menu-items {
   font-family: "Oswald", sans-serif;
   display: flex;
-  gap: 50px;
-  padding-left: 0;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-.navul li {
+.menu-items li {
   list-style: none;
-  display: inline;
+  margin: 0 10px;
 }
-.navul li a {
-  font-size: 70%;
+.menu-items li a {
+  font-size: auto;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: whitesmoke;
-  padding: 10px;
   transition: 0.5s ease;
 }
 
-.navul:hover li a {
+.menu-toggle {
+  display: none;
+}
+
+.menu-items:hover li a {
   color: #fca311;
 }
 
-.navul:hover li a:not(:hover) {
+.menu-items:hover li a:not(:hover) {
   color: white;
   opacity: 0.3;
   filter: blur(0px);
 }
 
-nav {
-  color: white;
-  text-align: center;
-  padding: 14px -20px;
-  text-decoration: none;
-  font-size: 17px;
-  opacity: 0.7;
+.menu-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  cursor: pointer;
 }
 
 .bodyc {
@@ -71,14 +85,8 @@ nav {
 main {
   margin: 5rem;
 }
-
-.section1 {
-  background-color: #272626;
-  width: 100%;
-  padding: 35px;
-  height: 10rem;
-  display: flex;
-  align-content: center;
+main h1 {
+  color: #d7a449;
 }
 
 .ahome {
@@ -145,6 +153,10 @@ main {
   font-size: large;
 }
 
+.fs-2 {
+  color: #d7a449;
+}
+
 .container-fluid {
   display: flex;
   justify-content: space-between;
@@ -167,6 +179,11 @@ main {
     font-size: 90%;
   }
 }
+@media only screen and (min-width: 360px) and (max-width: 515px) {
+  nav {
+    font-size: 13px;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -182,6 +199,8 @@ main {
 }
 .content .para {
   line-height: 1.5;
+  font-weight: 300;
+  color: #cacdd2;
 }
 
 .cardds:hover {
@@ -191,9 +210,9 @@ main {
 
 h1 {
   font-size: xx-large;
+  color: #d7a449;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
-  color: #1a1919;
   margin-bottom: 5%;
   margin-top: 5%;
 }
@@ -308,7 +327,7 @@ h1 {
 
 h1 {
   text-align: center;
-  color: #cacdd2;
+  color: #d7a449;
   border-bottom-style: solid;
   border-bottom-color: #cacdd2;
   font-weight: bolder;
@@ -368,11 +387,11 @@ span {
     margin: none;
   }
 }
-/* CLASES */
+/* CLASES --------------------------------*/
 #week-schedule {
   margin: auto;
-  width: 1700px;
-  height: 350px;
+  width: 100%;
+  height: 100% 350px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr repeat(5, auto);
@@ -386,7 +405,8 @@ span {
   border-radius: 7px;
   border-color: #141010;
 }
-.schedule-day h1 {
+.schedule-day h4 {
+  color: #141010;
   margin-block-start: 3px;
   margin-block-end: 3px;
   font-weight: 400;
@@ -773,10 +793,10 @@ input:focus,
     overflow-x: scroll;
   }
 }
-@media only screen and (min-width: 900px) and (max-width: 1300px) {
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
   .mainclases {
     overflow-x: scroll;
-    height: 912px;
+    height: 300px;
   }
 }
 /* INSTRUCTORES------------------------------------------------------------- */
