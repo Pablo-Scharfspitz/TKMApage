@@ -77,9 +77,6 @@ nav {
 
     main{
       margin: 5rem;
-        h1{
-          color: #d7a449;
-        }
     }
 
     
@@ -202,9 +199,7 @@ nav {
   }
   h1 {
     font-size: xx-large;
-    color: #d7a449;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     margin-bottom: 5%;
     margin-top: 5%;
   }
@@ -307,10 +302,16 @@ nav {
 }
 .shotcontent {
   grid-area: shotcontent;
+  h2{
+    color: rgb(33, 143, 33);
+  }
 }
 
 .securityinfo {
   grid-area: securityinfo;
+  h2{
+    color: #ff5709
+  }
 }
 .container-fluid{
   width: auto;
@@ -318,10 +319,8 @@ nav {
 
 h1 {
   text-align: center;
-  color: #d7a449;
   border-bottom-style: solid;
   border-bottom-color: #cacdd2;
-  font-weight:bolder;
   }
 
 .fw-bolder{
@@ -329,9 +328,7 @@ h1 {
   text-align: center;
 }
 .fw-bold{
-  font-size: x-large;
-text-decoration: underline;
-text-decoration-color: #313131;
+  font-size: xx-large;
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .imgshooter{
@@ -349,7 +346,6 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: none;
 }
 .fs-3{
-font-weight:bold;
 text-align: left;
 }
 .shotcontent{
@@ -361,14 +357,13 @@ text-align: left;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-      "shotcontent shotcontent extrainfo"
-      "shotcontent shotcontent extrainfo"
-      "securityinfo securityinfo extrainfo";
+      "shotcontent shotcontent "
+      "shotcontent shotcontent "
+      "securityinfo securityinfo ";
 }
 }
 span{
-  margin-right: 5%;
-  padding: 5px;
+  padding: 3px;
   }
   @media only screen and (min-width: 1280px){
   .main{margin: none;}
@@ -441,6 +436,7 @@ span{
     background-color: #e5e5e5;
     color: #c50000;
   }
+
   @media only screen and (min-width: 360px) and (max-width: 800px) {
 .number{
   margin: 100px;
@@ -687,7 +683,7 @@ span{
             bottom: 48px;
             .year-box {
               position: relative;
-              color: #252525;
+              color: #d7a449;
               font-size: 24px;
               font-weight: 700;
               line-height: 1.4em;
@@ -819,27 +815,27 @@ span{
      img {
         top: -10%;
         filter: brightness(70%);
-     }
-     
-     .text {
+    }
+    
+    .text {
         bottom: 0;
-     }
+    }
   }
   
   img {
-     bottom: 0;
-     filter: brightness(100%);
-     left: 0;
-     position: absolute;
-     right: 0;
-     top: 0;
-     transition: 0.5s ease-in-out;
-     width: 100%;
+    bottom: 0;
+    filter: brightness(100%);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    width: 100%;
   }
   
   .text {
     bottom: -30%;
-    padding: auto;
+    padding-left: 2%;
     position: absolute;
     transition: 0.5s ease-in-out;
     font-size: small;

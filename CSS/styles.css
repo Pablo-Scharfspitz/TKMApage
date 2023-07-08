@@ -85,9 +85,6 @@ nav {
 main {
   margin: 5rem;
 }
-main h1 {
-  color: #d7a449;
-}
 
 .ahome {
   padding-right: 70%;
@@ -210,9 +207,7 @@ main h1 {
 
 h1 {
   font-size: xx-large;
-  color: #d7a449;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   margin-bottom: 5%;
   margin-top: 5%;
 }
@@ -316,9 +311,15 @@ h1 {
 .shotcontent {
   grid-area: shotcontent;
 }
+.shotcontent h2 {
+  color: rgb(33, 143, 33);
+}
 
 .securityinfo {
   grid-area: securityinfo;
+}
+.securityinfo h2 {
+  color: #ff5709;
 }
 
 .container-fluid {
@@ -327,10 +328,8 @@ h1 {
 
 h1 {
   text-align: center;
-  color: #d7a449;
   border-bottom-style: solid;
   border-bottom-color: #cacdd2;
-  font-weight: bolder;
 }
 
 .fw-bolder {
@@ -339,9 +338,7 @@ h1 {
 }
 
 .fw-bold {
-  font-size: x-large;
-  text-decoration: underline;
-  text-decoration-color: #313131;
+  font-size: xx-large;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -363,7 +360,6 @@ h1 {
     border: none;
   }
   .fs-3 {
-    font-weight: bold;
     text-align: left;
   }
   .shotcontent {
@@ -374,12 +370,11 @@ h1 {
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "shotcontent shotcontent extrainfo" "shotcontent shotcontent extrainfo" "securityinfo securityinfo extrainfo";
+    grid-template-areas: "shotcontent shotcontent " "shotcontent shotcontent " "securityinfo securityinfo ";
   }
 }
 span {
-  margin-right: 5%;
-  padding: 5px;
+  padding: 3px;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -711,7 +706,7 @@ input:focus,
 }
 .about-section .image-column .inner-column .image .overlay-box .year-box {
   position: relative;
-  color: #252525;
+  color: #d7a449;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4em;
@@ -850,7 +845,7 @@ input:focus,
 }
 .cta .text {
   bottom: -30%;
-  padding: auto;
+  padding-left: 2%;
   position: absolute;
   transition: 0.5s ease-in-out;
   font-size: small;
