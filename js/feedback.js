@@ -4,4 +4,5 @@ function toggle_visibility() {
     e.style.display = 'none';
     else
     e.style.display = 'block';
+    
  }
